@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coffee Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body onload="LoadProduct()">
+    <div class="container" id="hi">
+        <div>
+             <div class="contact">
+                <div class="diachi">
+                    <i class="glyphicon glyphicon-earphone"></i><span>Điện thoại: 0962973782</span>&emsp;&ensp;&ensp; 
+                    <span><i class="glyphicon glyphicon-envelope    "></i>Email: vitem@gmail.com</span>
+                </div>
+                <div class="dn">
+                     <span class="sign">
+                          <a href="#" style="padding-top: 0px;"><span class="trang"><span class="glyphicon glyphicon-user" ></span>Sign Up</span></a>
+                          <a onclick="dangnhap()" href="dangnhap.html" style="padding-top: 0px;"><span class="trang"><span class="glyphicon glyphicon-log-in"></span> Login</span></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+       <div class="head">
+            <div class="logo">
+                <a onclick="displayProduct()"><img src="cf1.jpg" style="height: 100px; width:130px;"></a>
+            </div>
+            <div class="vanchuyen">
+                        <img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy1-0x0.png" alt="">
+                        <span class="text">
+                            Miễn phí vận chuyển
+                        </span>
+                    </div>
+                    <div class="vanchuyen">
+                        <img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy2-0x0.png" alt="">
+                        <span class="text">Hỗ trợ 24/7</span>
+                    </div>
+                    <div class="vanchuyen">
+                        <img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy3-0x0.png" alt="">
+                        <span class="text">Giờ làm việc</span>
+                    </div>
+            <div class="cart">
+                <button id="c" onclick="displayCart()">
+                    <img src="cart.png">
+                    <b id="sl"></b>
+                </button>
+            </div>
+        </div>
+        
+      <div id="menu">
+          <ul style="list-style-type: none;">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li onclick="coffee1()">Cà Phê</li>
+                    <li onclick="tea1()" >Trà Sữa</li>
+                    <li onclick="fruit()">Nước ép</li>
+                    <li onclick="orders()">Liên hệ</li>
+                    <li><a href="NhapSP.html">Thêm</a></li>
+               <input id="search" type="text" placeholder="search..." name="" value="" size="40" />
+                <button class="res" onclick="research()"><img id="s" src="search.png"></button>
+          </ul>
+
+      </div>
+        <div class="main">
+            <div id="products"></div>
+            <div id="cf"></div>
+            <div id="tr"></div>
+            <div id="fr"></div>
+            <div id="carts"></div>
+            <div id="order"></div>
+            <div id="timkiem"></div>
+            
+        </div>
+        <div class="chu">Trà Sữa</div>
+        <div id="tra"></div>
+        <div class="chu">Cà Phê</div>
+         <div id="caphe"></div>
+        <div id="footer" class="color-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="widget">
+                        <h4 class="widget-title">Facebook</h4>
+                    </div>
+                    <div>
+                            <ul>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-leaf"></i>Ngà Nguyễn</a></li>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-apple"></i>Vịt em</a></li>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-apple"></i>Phone:0961973782</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="widget">
+                        <h4 class="widget-title">Information</h4>
+                        <div>
+                            <ul>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-leaf"></i> Shop</a></li>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-apple"></i> New milk tea</a></li>
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-bell"></i> Sale</a></li>
+
+                                <li><a href="blog_fullwidth_2col.html"><i class="glyphicon glyphicon-gift"></i> Gift</a></li>
+
+                                <li><a href="blog_fullwidth_2col.html"><i class="   glyphicon glyphicon-music"></i> Guitar coffe</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                 <div class="col-sm-10">
+                    <div class="widget">
+                        <h4 class="widget-title">Contact Us</h4>
+                        <div>
+                            <div class="contact-info">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                                <p>101B Lê Hữu Trác-Sơn Trà Đà Nẵng</p>
+                                <p>Hoặc Hòa Vang-Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="widget">
+                        <h4 class="widget-title">Nhớ đăng kí theo dõi shop</h4>
+                        <form action="#" method="post">
+                            <input style="border-radius: 7px" type="email" name="your_email">
+                            <button style="border-radius: 7px" class="pull-right" type="submit">Đăng kí <i class="fa fa-chevron-right"></i></button>
+                        </form>
+                        <p>Remember subscribe:
+        <button type="button" class="btn btn-default btn-sm">Subscribe
+          <span class="glyphicon glyphicon-chevron-right"></span> 
+        </button>
+      </p>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+    function matchpass(){
+     var cuser = "mooncoffee";
+     var cpass = "moon";
+   
+     var getUsername = document.getElementById('uname').value;
+     var getPassword = document.getElementById('psw').value;
+
+     if(getUsername == cuser && getPassword == cpass ){
+       alert("Đăng nhập thành công!");
+       return true;
+
+     }
+     else{
+      alert("Tên tài khoản hoặc mật khẩu sai.");
+      return false;
+    }
+   
+  }
+ 
+</script>
+    <script src="list.js"></script>
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="NhapSP.js"></script>
+</body>
+</html>

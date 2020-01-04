@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nhập sản phẩm vào cửa hàng</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="NhapSP.css">
+	<script src="NhapSP.js"></script>
+</head>
+<body>
+	<div class="cotainer-menu">
+			<!-- Logo desktop -->		
+			<a href="#" class="logo">
+				<img src="img/icons/logo-01.png" alt="IMG-LOGO">
+			</a>
+			<!-- Menu desktop -->
+			<div class="menu-desktop">
+				<ul class="main-menu">
+					<li class="active-menu">
+						<a href="admin.html">Trang chủ</a>
+					</li>
+					<li class="menu">
+						<a href="coffee.html">Cà Phê</a>
+					</li>
+					<li class="menu">
+						<a href="tea.html">Trà</a>
+					</li>
+					<li class="	menu">
+						<a href=NhapSP.html>Thêm sản phẩm</a>
+					</li>					
+				</ul>
+			</div>
+	</div>
+	<div class="container">
+		<!-- Thêm Sản Phẩm -->
+		<div class="AddProduct" id="add">
+			<h1>Nhập Sản Phảm Mới Vào</h1>
+			<hr />
+			<form name="frm" class="form-inline" onsubmit="AddProduct(); return false;">
+				<div class="form-group col-md-12">
+					<label for="namepd">Name Product</label>
+					<input type="text" name="npd" id="npd" class="form-control col-md-4 ">
+					<label for="codepd">Code Product</label>
+					<input type="text" name="codepd" id="codepd" class="form-control col-md-4">
+				</div>
+				<div class="form-group col-md-12">
+					<label for="ppd">Price Product</label>
+					<input type="text" name="ppd" id="ppd" class="form-control col-md-4 ">
+					<label for="oppd">OldPrice Product</label>
+					<input type="text" name="uoppd" id="oppd" class="form-control col-md-4">
+				</div>
+				<div class="form-group col-md-12">
+					<label for="select">Item Type</label>
+					<select name="" id="select" class="form-control col-md-4">
+		            <option value="1">coffee</option>
+		            <option value="2">tea</option>
+		          </select>
+				</div>
+				<div class="form-group col-md-12">
+					<label for="img">Image Product</label>
+					<input type="file" class="form-control-file col-md-3" name="img" id="img">
+				</div>
+				
+			</form>
+			<div class="col-md-12">
+					<button class="btn btn-danger add" onclick="AddProduct()">Add Product</button>
+			</div>
+		
+		</div>
+		<!-- Sửa Sản Phẩm -->
+		<div class="RepairProduct" id="renpair">
+			<h1>Sửa Sản Phẩm</h1>
+			<hr />
+			<form name="frm" class="form-inline" onsubmit="return false;">
+				<div class="form-group col-md-12">
+					<label for="snpd">Name Product</label>
+					<input type="text" name="snpd" id="snpd" class="form-control col-md-4 ">
+					<label for="scodepd">Code Product</label>
+					<input type="text" name="scodepd" id="scodepd" class="form-control col-md-4">
+				</div>
+				<div class="form-group col-md-12">
+					<label for="sppd">Price Product</label>
+					<input type="text" name="sppd" id="sppd" class="form-control col-md-4 ">
+					<label for="soppd">OldPrice Product</label>
+					<input type="text" name="soppd" id="soppd" class="form-control col-md-4">
+				</div>
+				<div class="form-group col-md-12">
+					<label for="select">Item Type</label>
+					<select name="" id="sselect" class="form-control col-md-4">
+		            <option value="1">coffee</option>
+		            <option value="2">tea</option>
+		          </select>
+				</div>
+				<div class="form-group col-md-12">
+					<label for="simg">Image Product</label>
+					<input type="file" class="form-control-file col-md-3" name="simg" id="simg">
+				</div>
+				
+			</form>
+		<div class="form-group col-md-12" id="update">
+					
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		<table id="tbl">
+			<tr class="table-primary table-header">
+				<th>ID</th>
+				<th>Name Product</th>
+				<th>Image</th>
+				<th>Code Product</th>
+				<th>Price Product</th>
+				<th>OldPrice Product</th>
+				<th>Day</th>
+				<th>Item Type</th>
+				<th>Repair</th>
+				<th>Delete</th>
+			</tr>
+		</table>
+	</div>
+	<script>
+		showdProduct();
+	</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

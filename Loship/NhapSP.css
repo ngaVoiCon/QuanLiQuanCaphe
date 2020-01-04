@@ -1,0 +1,150 @@
+label{
+	width: 150px;
+	float: left;
+}
+.form-group, button.add{
+    margin-top: 30px;
+}
+.card-men{
+	float: left;
+	width: 25%;
+	margin:10px 30px;
+	border-radius: 1px solid grey;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+img{
+	width: 90%;
+	height: 320px;
+	margin:5%;
+}
+h3{
+	width: 100%;
+	text-align: center;
+	font-family: arial;
+	font-weight: 500;
+}
+p{
+	text-align: center;
+}
+.form-group{
+	margin-top: 30px
+}
+table,tr,th,td{
+	border: 1px solid black;
+}
+table{width:700px;
+	border-spacing: 0;
+	border: 1px solid #bbb ;
+	width: 100%;
+}
+#tbl tr{
+	height: 50px;
+}
+#tbl tr th, #tbl tr td{
+	text-align: left;
+	border-bottom: 1px solid #bbb;
+	padding-left: 10px;
+}
+
+#tbl{
+	margin-top: 100px;
+}
+#renpair{
+	display: none;
+}
+button{
+  display: inline-block;
+}
+.tbl-img{
+  width: 90px;
+  height: 100px;;
+}
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  margin: 0 5px;
+}
+
+
+.cotainer-menu{
+	height: auto;
+    width: 100%;
+    float: left;
+    background: #d2d2d9;
+}
+.logo img{
+	float: left;
+	width: 133px;
+	height: 17px;
+	align-items: center;
+	margin: 28px 200px 25px 100px;
+}
+.main-menu{
+	margin: 0;
+	width: 100%;
+}
+.main-menu > li{
+	float: left;
+	display: block;
+  	position: relative;
+  	padding: 22px 10px 25px 0;
+  	margin: 0px 4px 0px 14px;
+}
+.main-menu > li > a {
+  font-family: Poppins-Medium;
+  font-size: 20px;
+  color: #333;
+  padding: 5px 0px;
+}
+.main-menu > li:hover > a {
+  text-decoration: none;
+  color: #6c7ae0;
+}
+.menpd{
+	float: left;
+    margin: 10px;
+    width: 100%;
+}
+.menpd .card-men{
+	float: left;
+	width: 20%;
+	margin:10px 30px;
+	border-radius: 1px solid grey;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+img{
+	width: 90%;
+	height: 320px;
+	margin:5%;
+}
+h3{
+	width: 100%;
+	text-align: center;
+	font-family: arial;
+	font-weight: 500;
+}
+p{
+	text-align: center;
+}
+button{
+  display: inline-block;
+}
+h1.nameprd{
+	padding: 130px 0 0 200px;
+}
+
+#products img, #cf img, #tr img, #fr img, #timkiem img, #carts img, #order img, #caphe img, #tra img{
+	width: 200px;
+	height: 170px;
+}
+
+#products button ,#cf button, #tr button, #fr button, #timkiem button, #carts button, #order button, #tra button, #caphe button{
+	background-color: orange;
+	color: black;
+}
+#products, #timkiem, #cf, #tr, #fr, #tra, #caphe{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
